@@ -8,12 +8,24 @@ class CountdownTimer {
     let nowDate = Date.now();
     let dif = targetDate - nowDate;
     let days = Math.floor(dif / 1000 / 60 / 60 / 24);
+    if (days < 0) {
+      days = 0;
+    }
     dif %= 1000 * 60 * 60 * 24;
     let hours = Math.floor(dif / 1000 / 60 / 60);
+    if (hours < 0) {
+      hours = 0;
+    }
     dif %= 1000 * 60 * 60;
     let mins = Math.floor(dif / 1000 / 60);
+    if (mins < 0) {
+      mins = 0;
+    }
     dif %= 1000 * 60;
     let secs = Math.floor(dif / 1000);
+    if (secs < 0) {
+      secs = 0;
+    }
     const timer = document.querySelector(this.selector);
     timer.querySelector(`[data-value="days"]`).textContent = days;
     timer.querySelector(`[data-value="hours"]`).textContent =
@@ -30,12 +42,24 @@ class CountdownTimer {
       nowDate = Date.now();
       let dif = targetDate - nowDate;
       days = Math.floor(dif / 1000 / 60 / 60 / 24);
+      if (days < 0) {
+        days = 0;
+      }
       dif %= 1000 * 60 * 60 * 24;
       hours = Math.floor(dif / 1000 / 60 / 60);
+      if (hours < 0) {
+        hours = 0;
+      }
       dif %= 1000 * 60 * 60;
       mins = Math.floor(dif / 1000 / 60);
+      if (mins < 0) {
+        mins = 0;
+      }
       dif %= 1000 * 60;
       secs = Math.floor(dif / 1000);
+      if (secs < 0) {
+        secs = 0;
+      }
       timer.querySelector(`[data-value="days"]`).textContent = days;
       timer.querySelector(`[data-value="hours"]`).textContent =
         `${hours}`.padStart(2, "0");
