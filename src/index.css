@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fcf4ed;
+}
+
+.section {
+  padding: 140px;
+}
+
+.title {
+  color: #2c2b2f;
+  text-align: center;
+  font-family: Kenia;
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.field {
+  min-width: 180px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #f67700;
+}
+
+.value {
+  color: #2c2b2f;
+  text-align: center;
+  font-family: Kenia;
+  font-size: 64px;
+  font-weight: 400;
+  display: block;
+}
+
+.label {
+  color: #2c2b2f;
+  text-align: center;
+  font-family: Kenia;
+  font-size: 32px;
+  font-weight: 400;
+  display: block;
+}
